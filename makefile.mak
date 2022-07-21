@@ -1,9 +1,9 @@
-OSa1q1:
-	gcc -o Q1a fork.c -I.
-	gcc -o Q1b thread.c -lpthread -I.
+OSa1q2:
+	nasm -f elf64 -o B.o B.asm
+
 run1:
-	./Q1a
+	gcc -no-pie A.c B.o C.c -o out.bin
 run2:
-	./Q1b
+	./run
 
 	
